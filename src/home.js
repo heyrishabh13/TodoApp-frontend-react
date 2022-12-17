@@ -128,19 +128,19 @@ export const Home = () => {
           <div className="flex w-11/12 m-auto justify-between ">
             <div className="w-1/3 bg-[rgb(15,23,42)] m-auto my-16 pb-12 rounded-lg px-8">
               <h1 className="text-white text-center text-xl pt-8">Todo-List</h1>
-              <div className="flex flex-col gap-2 mt-4 mx-16">
+              <div className="flex flex-col gap-4 mt-4 mx-16">
                 <input
-                  className="rounded px-2 bg-black text-white"
+                  className="rounded p-2 bg-black text-white"
                   placeholder="Task Name"
                   onKeyDown={handleTask}
                 />
                 <input
-                  className="rounded px-2 bg-black text-white"
+                  className="rounded p-2 bg-black text-white"
                   placeholder="Task Description"
                   onKeyDown={handleDescription}
                 />
                 <button
-                  className="bg-orange-500 w-auto rounded-lg text-white px-2 py-2"
+                  className="border-2 border-orange-500 hover:bg-orange-500 w-auto rounded-lg text-white px-2 py-2"
                   onClick={saveTodo}
                 >
                   Submit
@@ -191,7 +191,7 @@ export const Home = () => {
               <div className="w-1/3 bg-[rgb(15,23,42)] m-auto mt-16 pb-12 rounded-lg px-8 text-center">
                 <DisplayDescription id={showId} />
                 <button
-                  className="bg-orange-500 px-4 py-2 rounded-lg text-white"
+                  className="border-2 border-orange-500 hover:bg-orange-500 px-4 py-2 rounded-lg text-white"
                   onClick={() => setShow(false)}
                 >
                   Close

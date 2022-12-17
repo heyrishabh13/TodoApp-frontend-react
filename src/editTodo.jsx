@@ -97,7 +97,7 @@ export const EditTodo = () => {
         <div className='flex flex-col gap-2 mt-4 mx-16'>
           <input className='rounded px-2 bg-black text-white' placeholder='Task Name' value={task} onChange={handleTask} />
           <input className='rounded px-2 bg-black text-white' placeholder='Task Description' value={des} onChange={handleDescription} />
-          <button className='bg-orange-500 w-auto rounded-lg text-white px-2 py-2' onClick={() => { editTask(id); navigate(-1); }}>Submit</button>
+          <button className='border-2 border-orange-500 hover:bg-orange-500 w-auto rounded-lg text-white px-2 py-2' onClick={() => { editTask(id); navigate(-1); }}>Submit</button>
         </div>
         {/* <div className='mt-8'>
                     {todos?.map(todo=>(

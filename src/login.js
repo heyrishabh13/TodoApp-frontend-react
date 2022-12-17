@@ -78,11 +78,11 @@ export const Login = () => {
           </div>
           <hr className="mt-4"></hr>
           <div className="flex justify-end mt-4 gap-4">
-            <button className="bg-orange-500 px-4 py-2 rounded-lg text-white">
+            <button className="border-2 border-orange-500 hover:bg-orange-500 px-4 py-2 rounded-lg text-white">
               Cancel
             </button>
             <button
-              className="bg-orange-500 px-4 py-2 rounded-lg text-white"
+              className="border-2 border-orange-500 hover:bg-orange-500 px-4 py-2 rounded-lg text-white"
               onClick={() => saveCredentials()}
             >
               Sign in
